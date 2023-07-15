@@ -1,0 +1,80 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* General Styles */
+body {
+  background-color: rgba(249, 96, 96, 0.362);
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  margin: 1rem;
+}
+h1 {
+  text-align: center;
+}
+/* Form Styles */
+#addTodoForm {
+  margin-bottom: 10px;
+}
+#editTodoForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 25rem;
+  height: 12rem;
+}
+#editTodoForm span {
+  margin: 0 0 10px 10px;
+}
+#editTodoForm label {
+  margin-bottom: 0;
+}
+#editTodoForm fieldset {
+  border: none;
+  display: flex;
+  justify-content: space-between;
+}
+#editTodoForm fieldset button {
+  border: none;
+  flex-basis: 80px;
+  padding: 0.5rem 0;
+}
+#addTodoForm label {
+  margin-right: 10px;
+}
+/* Table Styles */
+#todoTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+#todoTable th,
+#todoTable td {
+  padding: 5px 10px;
+  border: 1px solid #373434;
+}
+/* Modal Styles */
+#todoModal {
+  padding: 16px;
+}
+/* Status Text Styles */
+.completed {
+  color: rgb(222, 118, 154);
+  text-decoration: line-through;
+}
+.pending {
+  color: rgb(32, 31, 31);
+}
+/* Dialog Polyfill Styles (for browsers that don't support <dialog>) */
+dialog[open] {
+  display: flex;
+  align-items: center;
+  z-index: 9999;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #d6c0ec;
+  border: 1px solid #ac84e3;
+  padding: 10px;
+}

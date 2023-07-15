@@ -1,0 +1,55 @@
+/*Estilos para el formulario*/
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #eacf95;
+  border-radius: 5px;
+}
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+input[type="text"],
+input[type="email"],
+input[type="password"],
+input[type="date"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-bottom: 10px;
+}
+input[type="submit"],
+input[type="reset"] {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #45A049;
+}
+/* Estilos para los mensajes de error */
+.error-message {
+  color: red;
+  font-size: 12px;
+  margin-top: 5px;
+}
+/*Estilos para el contenedor de errores */
+.error-container {
+  margin-top: 10px;
+}
+/*Estilos para el mensaje de éxito */
+.success-message {
+  color: green;
+  font-size: 14px;
+  margin-top: 10px;
+}
